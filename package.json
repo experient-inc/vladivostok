@@ -70,5 +70,5 @@
     "tslint": "^3.6.0",
     "codelyzer": "0.0.14"
   },
-  "typings": "dist/index.d.ts"
+  "typings": "dist/src/index.d.ts"
 }
