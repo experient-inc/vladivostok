@@ -31,6 +31,9 @@ function containsSegment(container: UrlSegment, containee: UrlSegment): boolean 
 
 function containsSegmentHelper(
     container: UrlSegment, containee: UrlSegment, containeePaths: UrlPathWithParams[]): boolean {
+  if(!container)
+    return false;
+
   if (container.pathsWithParams.length > containeePaths.length) {
     const current = container.pathsWithParams.slice(0, containeePaths.length);
     if (!equalPath(current, containeePaths)) return false;
